@@ -1,0 +1,116 @@
+Restore Archived Project report for proyecto3
+Mon Jan 29 08:53:43 2024
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon Jan 29 08:53:43 2024 ;
+; Revision Name                   ; proyecto3                             ;
+; Top-level Entity Name           ; micro                                 ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version6/12_enero.qar' into the 'C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version6/12_enero_restored/' directory
+Info: Generated report 'proyecto3.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 44 warnings
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Mon Jan 29 08:53:43 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
++------------------------------------+
+; Files Not Restored                 ;
++------------------------------------+
+; File Name                          ;
++------------------------------------+
+; qar_info.json                      ;
+; ALU.sv                             ;
+; ALU_CONTROL.sv                     ;
+; Banco_registros.sv                 ;
+; Control.sv                         ;
+; ImmGen.sv                          ;
+; PUERTA_AND.sv                      ;
+; RAM.sv                             ;
+; ROM.sv                             ;
+; assignment_defaults.qdf            ;
+; fase1.sv                           ;
+; fibonacci.txt                      ;
+; micro.sv                           ;
+; mux1.sv                            ;
+; mux2.sv                            ;
+; output_files/proyecto3.asm.rpt     ;
+; output_files/proyecto3.eda.rpt     ;
+; output_files/proyecto3.fit.rpt     ;
+; output_files/proyecto3.fit.smsg    ;
+; output_files/proyecto3.fit.summary ;
+; output_files/proyecto3.flow.rpt    ;
+; output_files/proyecto3.jdi         ;
+; output_files/proyecto3.map.rpt     ;
+; output_files/proyecto3.map.smsg    ;
+; output_files/proyecto3.map.summary ;
+; output_files/proyecto3.pin         ;
+; output_files/proyecto3.sld         ;
+; output_files/proyecto3.sof         ;
+; output_files/proyecto3.sta.rpt     ;
+; output_files/proyecto3.sta.summary ;
+; pc.sv                              ;
+; proyecto3.qpf                      ;
+; proyecto3.qsf                      ;
+; ram.txt                            ;
+; registro_ex_mem.sv                 ;
+; registro_id_ex.sv                  ;
+; registro_if_id.sv                  ;
+; registro_mem_wb.sv                 ;
+; sumador1.sv                        ;
+; sumador2.sv                        ;
+; tb_ALU_CONTROL.sv                  ;
+; tb_fibonacci.sv                    ;
+; tb_micro2.sv                       ;
++------------------------------------+
+
+

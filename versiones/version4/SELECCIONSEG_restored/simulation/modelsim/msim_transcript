@@ -1,0 +1,1450 @@
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2020.2 win64 Apr 19 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do proyecto3_run_msim_rtl_verilog.do
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# vlib verilog_libs/altera_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+# Errors: 0, Warnings: 1
+# vmap altera_ver ./verilog_libs/altera_ver
+# QuestaSim-64 vmap 2020.2 Lib Mapping Utility 2020.04 Apr 19 2020
+# vmap altera_ver ./verilog_libs/altera_ver 
+# Copying C:/questasim64_2020.2/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:46 on Dec 22,2023
+# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_primitives.v 
+# -- Compiling module global
+# -- Compiling module carry
+# -- Compiling module cascade
+# -- Compiling module carry_sum
+# -- Compiling module exp
+# -- Compiling module soft
+# -- Compiling module opndrn
+# -- Compiling module row_global
+# -- Compiling module TRI
+# -- Compiling module lut_input
+# -- Compiling module lut_output
+# -- Compiling module latch
+# -- Compiling module dlatch
+# -- Compiling module prim_gdff
+# -- Compiling module dff
+# -- Compiling module dffe
+# -- Compiling module dffea
+# -- Compiling module dffeas
+# -- Compiling module dffeas_pr
+# -- Compiling module prim_gtff
+# -- Compiling module tff
+# -- Compiling module tffe
+# -- Compiling module prim_gjkff
+# -- Compiling module jkff
+# -- Compiling module jkffe
+# -- Compiling module prim_gsrff
+# -- Compiling module srff
+# -- Compiling module srffe
+# -- Compiling module clklock
+# -- Compiling module alt_inbuf
+# -- Compiling module alt_outbuf
+# -- Compiling module alt_outbuf_tri
+# -- Compiling module alt_iobuf
+# -- Compiling module alt_inbuf_diff
+# -- Compiling module alt_outbuf_diff
+# -- Compiling module alt_outbuf_tri_diff
+# -- Compiling module alt_iobuf_diff
+# -- Compiling module alt_bidir_diff
+# -- Compiling module alt_bidir_buf
+# -- Compiling UDP PRIM_GDFF_LOW
+# -- Compiling UDP PRIM_GDFF_LOW_SCLR_PRIORITY
+# -- Compiling UDP PRIM_GDFF_HIGH
+# -- Compiling UDP PRIM_GDFF_HIGH_SCLR_PRIORITY
+# 
+# Top level modules:
+# 	global
+# 	carry
+# 	cascade
+# 	carry_sum
+# 	exp
+# 	soft
+# 	opndrn
+# 	row_global
+# 	TRI
+# 	lut_input
+# 	lut_output
+# 	latch
+# 	dlatch
+# 	dff
+# 	dffe
+# 	dffea
+# 	dffeas
+# 	dffeas_pr
+# 	tff
+# 	tffe
+# 	jkff
+# 	jkffe
+# 	srff
+# 	srffe
+# 	clklock
+# 	alt_inbuf
+# 	alt_outbuf
+# 	alt_outbuf_tri
+# 	alt_iobuf
+# 	alt_inbuf_diff
+# 	alt_outbuf_diff
+# 	alt_outbuf_tri_diff
+# 	alt_iobuf_diff
+# 	alt_bidir_diff
+# 	alt_bidir_buf
+# End time: 12:04:46 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/lpm_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
+# Errors: 0, Warnings: 1
+# vmap lpm_ver ./verilog_libs/lpm_ver
+# QuestaSim-64 vmap 2020.2 Lib Mapping Utility 2020.04 Apr 19 2020
+# vmap lpm_ver ./verilog_libs/lpm_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/220model.v}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:47 on Dec 22,2023
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/220model.v 
+# -- Compiling module LPM_MEMORY_INITIALIZATION
+# -- Compiling module LPM_HINT_EVALUATION
+# -- Compiling module LPM_DEVICE_FAMILIES
+# -- Compiling module lpm_constant
+# -- Compiling module lpm_inv
+# -- Compiling module lpm_and
+# -- Compiling module lpm_or
+# -- Compiling module lpm_xor
+# -- Compiling module lpm_bustri
+# -- Compiling module lpm_mux
+# -- Compiling module lpm_decode
+# -- Compiling module lpm_clshift
+# -- Compiling module lpm_add_sub
+# -- Compiling module lpm_compare
+# -- Compiling module lpm_mult
+# -- Compiling module lpm_divide
+# -- Compiling module lpm_abs
+# -- Compiling module lpm_counter
+# -- Compiling module lpm_latch
+# -- Compiling module lpm_ff
+# -- Compiling module lpm_shiftreg
+# -- Compiling module lpm_ram_dq
+# -- Compiling module lpm_ram_dp
+# -- Compiling module lpm_ram_io
+# -- Compiling module lpm_rom
+# -- Compiling module lpm_fifo
+# -- Compiling module lpm_fifo_dc_dffpipe
+# -- Compiling module lpm_fifo_dc_fefifo
+# -- Compiling module lpm_fifo_dc_async
+# -- Compiling module lpm_fifo_dc
+# -- Compiling module lpm_inpad
+# -- Compiling module lpm_outpad
+# -- Compiling module lpm_bipad
+# 
+# Top level modules:
+# 	lpm_constant
+# 	lpm_inv
+# 	lpm_and
+# 	lpm_or
+# 	lpm_xor
+# 	lpm_bustri
+# 	lpm_mux
+# 	lpm_decode
+# 	lpm_clshift
+# 	lpm_add_sub
+# 	lpm_compare
+# 	lpm_mult
+# 	lpm_divide
+# 	lpm_abs
+# 	lpm_counter
+# 	lpm_latch
+# 	lpm_ff
+# 	lpm_shiftreg
+# 	lpm_ram_dq
+# 	lpm_ram_dp
+# 	lpm_ram_io
+# 	lpm_rom
+# 	lpm_fifo
+# 	lpm_fifo_dc
+# 	lpm_inpad
+# 	lpm_outpad
+# 	lpm_bipad
+# End time: 12:04:47 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/sgate_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
+# Errors: 0, Warnings: 1
+# vmap sgate_ver ./verilog_libs/sgate_ver
+# QuestaSim-64 vmap 2020.2 Lib Mapping Utility 2020.04 Apr 19 2020
+# vmap sgate_ver ./verilog_libs/sgate_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/sgate.v}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:48 on Dec 22,2023
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/sgate.v 
+# -- Compiling module oper_add
+# -- Compiling module oper_addsub
+# -- Compiling module mux21
+# -- Compiling module io_buf_tri
+# -- Compiling module io_buf_opdrn
+# -- Compiling module oper_mult
+# -- Compiling module tri_bus
+# -- Compiling module oper_div
+# -- Compiling module oper_mod
+# -- Compiling module oper_left_shift
+# -- Compiling module oper_right_shift
+# -- Compiling module oper_rotate_left
+# -- Compiling module oper_rotate_right
+# -- Compiling module oper_less_than
+# -- Compiling module oper_mux
+# -- Compiling module oper_selector
+# -- Compiling module oper_decoder
+# -- Compiling module oper_bus_mux
+# -- Compiling module oper_latch
+# 
+# Top level modules:
+# 	oper_add
+# 	oper_addsub
+# 	mux21
+# 	io_buf_tri
+# 	io_buf_opdrn
+# 	oper_mult
+# 	tri_bus
+# 	oper_div
+# 	oper_mod
+# 	oper_left_shift
+# 	oper_right_shift
+# 	oper_rotate_left
+# 	oper_rotate_right
+# 	oper_less_than
+# 	oper_mux
+# 	oper_selector
+# 	oper_decoder
+# 	oper_bus_mux
+# 	oper_latch
+# End time: 12:04:48 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_mf_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
+# Errors: 0, Warnings: 1
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
+# QuestaSim-64 vmap 2020.2 Lib Mapping Utility 2020.04 Apr 19 2020
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_mf.v}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:48 on Dec 22,2023
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_mf.v 
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altera_syncram_derived
+# -- Compiling module altera_syncram_derived_forwarding_logic
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module altsyncram_body
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module alt_fault_injection
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	alt_fault_injection
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# End time: 12:04:49 on Dec 22,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_lnsim_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
+# Errors: 0, Warnings: 1
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
+# QuestaSim-64 vmap 2020.2 Lib Mapping Utility 2020.04 Apr 19 2020
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
+# Modifying modelsim.ini
+# vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_lnsim.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:49 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/altera_lnsim.sv 
+# -- Compiling package altera_lnsim_functions
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_lnsim_functions
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module common_28nm_lutram_register
+# -- Compiling module generic_14nm_mlab_cell_impl
+# -- Compiling module common_14nm_lutram_register
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_chainout_adder_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module ama_latency_function
+# -- Compiling module altera_pll_reconfig_tasks
+# -- Compiling module altera_syncram
+# -- Compiling module altera_syncram_forwarding_logic
+# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling module altera_pll
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module dps_pulse_gen
+# -- Compiling module altera_iopll
+# -- Compiling module dps_pulse_gen_iopll
+# -- Compiling module twentynm_iopll_arlol
+# -- Compiling module fourteennm_altera_iopll
+# -- Compiling module dps_pulse_gen_fourteennm_iopll
+# -- Compiling package fourteennm_iopll_functions
+# -- Compiling module fourteennm_simple_iopll
+# -- Importing package fourteennm_iopll_functions
+# -- Compiling module fourteennm_sub_iopll
+# -- Compiling module twentynm_iopll_ip
+# -- Compiling module altera_iopll_rotation_lcells
+# -- Compiling module altera_pll_dps_lcell_comb
+# -- Compiling module iopll_bootstrap
+# 
+# Top level modules:
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_14nm_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# 	altera_syncram
+# 	altera_pll
+# 	altera_iopll
+# 	fourteennm_altera_iopll
+# 	fourteennm_simple_iopll
+# End time: 12:04:50 on Dec 22,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/cycloneive_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneive_ver".
+# Errors: 0, Warnings: 1
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver
+# QuestaSim-64 vmap 2020.2 Lib Mapping Utility 2020.04 Apr 19 2020
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work cycloneive_ver {c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:50 on Dec 22,2023
+# vlog -reportprogress 300 -vlog01compat -work cycloneive_ver c:/intelfpga_lite/17.1/quartus/eda/sim_lib/cycloneive_atoms.v 
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFE
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS_HIGH
+# -- Compiling module cycloneive_dffe
+# -- Compiling module cycloneive_mux21
+# -- Compiling module cycloneive_mux41
+# -- Compiling module cycloneive_and1
+# -- Compiling module cycloneive_and16
+# -- Compiling module cycloneive_bmux21
+# -- Compiling module cycloneive_b17mux21
+# -- Compiling module cycloneive_nmux21
+# -- Compiling module cycloneive_b5mux21
+# -- Compiling module cycloneive_latch
+# -- Compiling module cycloneive_routing_wire
+# -- Compiling module cycloneive_m_cntr
+# -- Compiling module cycloneive_n_cntr
+# -- Compiling module cycloneive_scale_cntr
+# -- Compiling module cycloneive_pll_reg
+# -- Compiling module cycloneive_pll
+# -- Compiling module cycloneive_lcell_comb
+# -- Compiling module cycloneive_ff
+# -- Compiling module cycloneive_ram_pulse_generator
+# -- Compiling module cycloneive_ram_register
+# -- Compiling module cycloneive_ram_block
+# -- Compiling module cycloneive_mac_data_reg
+# -- Compiling module cycloneive_mac_sign_reg
+# -- Compiling module cycloneive_mac_mult_internal
+# -- Compiling module cycloneive_mac_mult
+# -- Compiling module cycloneive_mac_out
+# -- Compiling module cycloneive_io_ibuf
+# -- Compiling module cycloneive_io_obuf
+# -- Compiling module cycloneive_ddio_out
+# -- Compiling module cycloneive_ddio_oe
+# -- Compiling module cycloneive_pseudo_diff_out
+# -- Compiling module cycloneive_io_pad
+# -- Compiling module cycloneive_asmiblock
+# -- Compiling module cycloneive_ena_reg
+# -- Compiling module cycloneive_clkctrl
+# -- Compiling module cycloneive_rublock
+# -- Compiling module cycloneive_apfcontroller
+# -- Compiling module cycloneive_termination_ctrl
+# -- Compiling module cycloneive_termination_rupdn
+# -- Compiling module cycloneive_termination
+# -- Compiling module cycloneive_jtag
+# -- Compiling module cycloneive_crcblock
+# -- Compiling module cycloneive_oscillator
+# 
+# Top level modules:
+# 	cycloneive_dffe
+# 	cycloneive_and1
+# 	cycloneive_and16
+# 	cycloneive_bmux21
+# 	cycloneive_b17mux21
+# 	cycloneive_nmux21
+# 	cycloneive_b5mux21
+# 	cycloneive_pll_reg
+# 	cycloneive_pll
+# 	cycloneive_lcell_comb
+# 	cycloneive_ff
+# 	cycloneive_ram_block
+# 	cycloneive_mac_mult
+# 	cycloneive_mac_out
+# 	cycloneive_io_ibuf
+# 	cycloneive_io_obuf
+# 	cycloneive_ddio_out
+# 	cycloneive_ddio_oe
+# 	cycloneive_pseudo_diff_out
+# 	cycloneive_io_pad
+# 	cycloneive_asmiblock
+# 	cycloneive_clkctrl
+# 	cycloneive_rublock
+# 	cycloneive_apfcontroller
+# 	cycloneive_termination
+# 	cycloneive_jtag
+# 	cycloneive_crcblock
+# 	cycloneive_oscillator
+# End time: 12:04:50 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# QuestaSim-64 vmap 2020.2 Lib Mapping Utility 2020.04 Apr 19 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_ex_mem.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:50 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_ex_mem.sv 
+# -- Compiling module registro_ex_mem
+# 
+# Top level modules:
+# 	registro_ex_mem
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_mem_wb.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:51 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_mem_wb.sv 
+# -- Compiling module registro_mem_wb
+# 
+# Top level modules:
+# 	registro_mem_wb
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_if_id.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:51 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_if_id.sv 
+# -- Compiling module registro_if_id
+# 
+# Top level modules:
+# 	registro_if_id
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/pc.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:51 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/pc.sv 
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Banco_registros.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:51 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Banco_registros.sv 
+# -- Compiling module Banco_registros
+# 
+# Top level modules:
+# 	Banco_registros
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:51 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/fase1.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:51 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/fase1.sv 
+# -- Compiling module fase1
+# 
+# Top level modules:
+# 	fase1
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Control.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:51 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Control.sv 
+# -- Compiling module Control
+# 
+# Top level modules:
+# 	Control
+# End time: 12:04:51 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux1.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux1.sv 
+# -- Compiling module mux1
+# 
+# Top level modules:
+# 	mux1
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux2.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador1.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador1.sv 
+# -- Compiling module sumador1
+# 
+# Top level modules:
+# 	sumador1
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador2.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador2.sv 
+# -- Compiling module sumador2
+# 
+# Top level modules:
+# 	sumador2
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU_CONTROL.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU_CONTROL.sv 
+# -- Compiling module ALU_CONTROL
+# 
+# Top level modules:
+# 	ALU_CONTROL
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/PUERTA_AND.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/PUERTA_AND.sv 
+# -- Compiling module PUERTA_AND
+# 
+# Top level modules:
+# 	PUERTA_AND
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ImmGen.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ImmGen.sv 
+# -- Compiling module ImmGen
+# 
+# Top level modules:
+# 	ImmGen
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/micro.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:52 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/micro.sv 
+# -- Compiling module micro
+# 
+# Top level modules:
+# 	micro
+# End time: 12:04:52 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_id_ex.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:53 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_id_ex.sv 
+# -- Compiling module registro_id_ex
+# 
+# Top level modules:
+# 	registro_id_ex
+# End time: 12:04:53 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ROM.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:53 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ROM.sv 
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# End time: 12:04:53 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/RAM.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:53 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/RAM.sv 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 12:04:53 on Dec 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv}
+# QuestaSim-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+# Start time: 12:04:53 on Dec 22,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored" C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv 
+# -- Compiling module tb_micro
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(3:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(4:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(5:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(6:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(7:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(8:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(9:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(10:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(15:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(16:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(17:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(18:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(19:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(20:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(21:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(22:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(23:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(24:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(25:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(26:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(27:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(30:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(31:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(32:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(33:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(34:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(43:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(44:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(45:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(46:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13004) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(68.0): syntax error, unexpected type name. The type 'pruebas_concretas' is defined at C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(50).
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(74): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(75): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(76): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(77): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(79): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(80): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(81): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(82): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(83): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(88:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(89:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(90): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(91): (vlog-13161) unexpected '$display', expecting elaboration system task $fatal/$error/$warning/$info.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13069) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(92): near "(": syntax error, unexpected '(', expecting "SystemVerilog keyword 'property'".
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:2): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:3): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:4): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:5): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:6): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:7): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:8): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:9): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:10): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:11): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:12): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:13): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:14): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:15): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:16): Syntax error, unexpected non-printable character with the hex value '0x80'.
+# ** Error: (vlog-13067) C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93:17): Syntax error, unexpected non-printable character with the hex value '0x82'.
+# ** Error: C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv(93): (vlog-13205) Syntax error found in the scope following 'w2'. Is there a missing '::'?
+# End time: 12:05:04 on Dec 22,2023, Elapsed time: 0:00:11
+# Errors: 662, Warnings: 0
+# ** Error: C:/questasim64_2020.2/win64/vlog failed.
+# Error in macro ./proyecto3_run_msim_rtl_verilog.do line 56
+# C:/questasim64_2020.2/win64/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored {C:/Users/adamc..."
+# 
+# 
+# 
+# 

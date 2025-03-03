@@ -1,0 +1,73 @@
+m255
+K4
+z2
+!s11f vlog 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/simulation/modelsim
+T_opt
+!s110 1700819611
+VM45bT>9eAoH;fN4=i^@6Y2
+04 6 4 work tb_ALU fast 0
+=3-48e7da8f86d1-6560729b-7c-3168
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.2;71
+R0
+vALU
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1700823154
+!i10b 1
+!s100 BoK?TeWHPjd2@d44zG<Ai0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA8E`^JICkcUF_8YDPzTz42
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1700821095
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/ALU.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/ALU.sv
+!i122 6
+L0 1 62
+Z5 OL;L;2020.2;71
+r1
+!s85 0
+31
+!s108 1700823154.000000
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/ALU.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/ALU.sv|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@l@u
+vtb_ALU
+R2
+!s110 1700823417
+!i10b 1
+!s100 =S;=n?9KSSgzL9MkgH5K00
+R3
+I74l1mUTlLKUVbfJFQSoU00
+R4
+S1
+R0
+w1700823413
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/tb_ALU.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/tb_ALU.sv
+!i122 7
+L0 2 119
+R5
+r1
+!s85 0
+31
+!s108 1700823417.000000
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/tb_ALU.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version1/FASE1_restored/tb_ALU.sv|
+!i113 0
+R6
+R1
+ntb_@a@l@u

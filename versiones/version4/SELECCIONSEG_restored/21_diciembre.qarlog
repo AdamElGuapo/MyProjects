@@ -1,0 +1,53 @@
+Quartus Prime Archive log --	C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/21_diciembre.qarlog
+
+Archive:	C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/21_diciembre.qar
+Date:		Fri Dec 22 08:14:04 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU_CONTROL.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Banco_registros.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Control.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ImmGen.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/PUERTA_AND.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/RAM.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ROM.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/assignment_defaults.qdf
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/fase1.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/micro.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux1.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux2.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.asm.rpt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.eda.rpt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.fit.rpt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.fit.smsg
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.fit.summary
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.flow.rpt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.jdi
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.map.rpt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.map.smsg
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.map.summary
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.pin
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.sld
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.sof
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.sta.rpt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/output_files/proyecto3.sta.summary
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/pc.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/proyecto3.qpf
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/proyecto3.qsf
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ram.txt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_ex_mem.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_id_ex.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_if_id.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_mem_wb.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/seleccionconnops.txt
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador1.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador2.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_ALU_CONTROL.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_fase1.sv
+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/tb_micro.sv
+	======= Total: 42 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,513 @@
+m255
+K4
+z2
+!s11f vlog 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/simulation/modelsim
+vALU
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1703243091
+!i10b 1
+!s100 T0g5LOX8f>oP[lkYQ@>870
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]^_c`fHO[C5Z`D^zZV5WC2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1702306582
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU.sv
+!i122 5
+L0 1 81
+Z5 OL;L;2020.2;71
+r1
+!s85 0
+31
+Z6 !s108 1703243091.000000
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU.sv|
+!i113 0
+Z7 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -sv -work work +incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0
+n@a@l@u
+vALU_CONTROL
+R1
+Z10 !s110 1703243092
+!i10b 1
+!s100 nnHg>LzJh=mD1D;R?MJ@c2
+R3
+I3WJ3H6h:Hz73fkTcWg`KH0
+R4
+S1
+R0
+w1702916735
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU_CONTROL.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU_CONTROL.sv
+!i122 12
+L0 1 87
+R5
+r1
+!s85 0
+31
+Z11 !s108 1703243092.000000
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU_CONTROL.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ALU_CONTROL.sv|
+!i113 0
+R7
+R8
+R9
+n@a@l@u_@c@o@n@t@r@o@l
+vBanco_registros
+R1
+R2
+!i10b 1
+!s100 QF^JfhEAEJiMzF]O_eC^h1
+R3
+I7:dD]ofneZM_j3:z^oH5z1
+R4
+S1
+R0
+w1701442079
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Banco_registros.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Banco_registros.sv
+!i122 4
+L0 1 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Banco_registros.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Banco_registros.sv|
+!i113 0
+R7
+R8
+R9
+n@banco_registros
+vControl
+R1
+R2
+!i10b 1
+!s100 T?[:SQjkbF_ohXimnkXBD1
+R3
+I<lV>bmU;@NHa^`8dkcX<n3
+R4
+S1
+R0
+w1701442552
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Control.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Control.sv
+!i122 7
+L0 1 34
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/Control.sv|
+!i113 0
+R7
+R8
+R9
+n@control
+vfase1
+R1
+R2
+!i10b 1
+!s100 iQajdzg8EMo4agh178H@Q2
+R3
+I6KURQHD0KESWMADl0`JhD3
+R4
+S1
+R0
+w1702916354
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/fase1.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/fase1.sv
+!i122 6
+L0 1 106
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/fase1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/fase1.sv|
+!i113 0
+R7
+R8
+R9
+vImmGen
+R1
+R10
+!i10b 1
+!s100 CcHLn5^U_]e@FYnHOI<?53
+R3
+Ilbcz5`JZW^H6n6YB6l3C>2
+R4
+S1
+R0
+w1702308321
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ImmGen.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ImmGen.sv
+!i122 14
+L0 1 20
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ImmGen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ImmGen.sv|
+!i113 0
+R7
+R8
+R9
+n@imm@gen
+vmicro
+R1
+R10
+!i10b 1
+!s100 Q6eA3P1mDaAmoe>]@d=AR2
+R3
+IAW2RedPF?3_zfdn<aKcYe1
+R4
+S1
+R0
+w1702917066
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/micro.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/micro.sv
+!i122 15
+L0 1 16
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/micro.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/micro.sv|
+!i113 0
+R7
+R8
+R9
+vmux1
+R1
+R10
+!i10b 1
+!s100 Kb30PQ^]C[XHoD2bcSMAU0
+R3
+I`UhTbgZBf?lg4j^j^nLl;2
+R4
+S1
+R0
+w1702054213
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux1.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux1.sv
+!i122 8
+Z12 L0 1 12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux1.sv|
+!i113 0
+R7
+R8
+R9
+vmux2
+R1
+R10
+!i10b 1
+!s100 E^z37E6>zQo]f7zh;8C`L0
+R3
+I6JIk`cj44kn>=TUfd[9^L2
+R4
+S1
+R0
+w1701422323
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux2.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux2.sv
+!i122 9
+L0 1 15
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/mux2.sv|
+!i113 0
+R7
+R8
+R9
+vpc
+R1
+R2
+!i10b 1
+!s100 m?7Th?C@jY;fzV14P>LOj3
+R3
+In`MGZ:0ZiKggU8<c@7DK?3
+R4
+S1
+R0
+w1702038292
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/pc.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/pc.sv
+!i122 3
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/pc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/pc.sv|
+!i113 0
+R7
+R8
+R9
+vPUERTA_AND
+R1
+R10
+!i10b 1
+!s100 ?l26;YUGf?;Z[<2V>92Q?0
+R3
+IFIVS00=AWEj3CRFOWXhRI2
+R4
+S1
+R0
+w1701090880
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/PUERTA_AND.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/PUERTA_AND.sv
+!i122 13
+Z13 L0 1 9
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/PUERTA_AND.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/PUERTA_AND.sv|
+!i113 0
+R7
+R8
+R9
+n@p@u@e@r@t@a_@a@n@d
+vRAM
+R1
+Z14 !s110 1703243093
+!i10b 1
+!s100 zHOjdTD;GJP5n1EdJPPbd1
+R3
+I;2m^a:QVoTlXLZ`3VTE^a3
+R4
+S1
+R0
+w1703176391
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/RAM.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/RAM.sv
+!i122 18
+L0 1 28
+R5
+r1
+!s85 0
+31
+Z15 !s108 1703243093.000000
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/RAM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/RAM.sv|
+!i113 0
+R7
+R8
+R9
+n@r@a@m
+vregistro_ex_mem
+R1
+R2
+!i10b 1
+!s100 OkN]AQ2XTLEc9_AADF0FZ2
+R3
+I8Y7GWKd^Oh[[MOdGV2F:P2
+R4
+S1
+R0
+w1702906085
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_ex_mem.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_ex_mem.sv
+!i122 0
+L0 1 33
+R5
+r1
+!s85 0
+31
+!s108 1703243090.000000
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_ex_mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_ex_mem.sv|
+!i113 0
+R7
+R8
+R9
+vregistro_id_ex
+R1
+R14
+!i10b 1
+!s100 m=AhCiL?`7NCZV@2EH@;R1
+R3
+I1iVFf76O;a1b[O1YBBIlG1
+R4
+S1
+R0
+w1702627706
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_id_ex.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_id_ex.sv
+!i122 16
+L0 1 35
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_id_ex.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_id_ex.sv|
+!i113 0
+R7
+R8
+R9
+vregistro_if_id
+R1
+R2
+!i10b 1
+!s100 3ES;Bm]Rfk9S4lMoIE0Ni3
+R3
+IYD]f3=QMTcOLlkzLa6kUE0
+R4
+S1
+R0
+w1702630478
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_if_id.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_if_id.sv
+!i122 2
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_if_id.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_if_id.sv|
+!i113 0
+R7
+R8
+R9
+vregistro_mem_wb
+R1
+R2
+!i10b 1
+!s100 IiaNiJcZ0CGnB0id?=jHf0
+R3
+INUIL50@RjmW2RT7cZKWoT2
+R4
+S1
+R0
+w1702915049
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_mem_wb.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_mem_wb.sv
+!i122 1
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_mem_wb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/registro_mem_wb.sv|
+!i113 0
+R7
+R8
+R9
+vROM
+R1
+R14
+!i10b 1
+!s100 <b2mODdG:aABXW<@f9_eo3
+R3
+Idn<23iJ7?DIW<7FGZd01P0
+R4
+S1
+R0
+w1703176388
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ROM.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ROM.sv
+!i122 17
+L0 1 18
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/ROM.sv|
+!i113 0
+R7
+R8
+R9
+n@r@o@m
+vsumador1
+R1
+R10
+!i10b 1
+!s100 4B8aYI5==W^m@]N_0oofT0
+R3
+I4hPG7h;cg1ZnbSP`i`D2@1
+R4
+S1
+R0
+w1702305832
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador1.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador1.sv
+!i122 10
+R13
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador1.sv|
+!i113 0
+R7
+R8
+R9
+vsumador2
+R1
+R10
+!i10b 1
+!s100 9<n?LXUDo_Kg>P=bh<N063
+R3
+IKFI<hOXB0cNFN4jlDON4@1
+R4
+S1
+R0
+w1700822063
+8C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador2.sv
+FC:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador2.sv
+!i122 11
+R13
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored|C:/Users/adamc/OneDrive/Escritorio/UNI/5toCUATRI/ISDIGI/PROYECTO3/versiones/version4/SELECCIONSEG_restored/sumador2.sv|
+!i113 0
+R7
+R8
+R9

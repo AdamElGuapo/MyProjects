@@ -1,0 +1,18 @@
+module ROM	#(parameter profundidad = 1024)
+(
+    input logic [$clog2(profundidad-1)-1:0] address,
+    output logic [31:0] data_out
+);
+    
+    logic [31:0] rom [0:profundidad-1];
+
+    
+    initial 
+	 begin
+        $readmemh("W:/TERCERO/ISDIGI/PRACTICA3/VERSIONES/version8/2_de_enero_restored/fibonacci.txt", rom);
+    end
+
+    
+    assign data_out = rom[address];
+
+endmodule

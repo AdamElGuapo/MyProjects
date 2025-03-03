@@ -1,0 +1,26 @@
+Quartus Prime Archive log --	C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/proyecto3_clase1.qarlog
+
+Archive:	C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/proyecto3_clase1.qar
+Date:		Fri Nov 17 10:00:51 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/ALU.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/Banco_registros.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/RAM.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/RAM.txt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/ROM.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/ROM.txt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/arc_file_list_temp.tmp.txt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/assignment_defaults.qdf
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.done
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.flow.rpt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.map.rpt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.map.summary
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/proyecto3.qpf
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/proyecto3.qsf
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/proyecto3.restore.rpt
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

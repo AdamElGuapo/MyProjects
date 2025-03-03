@@ -1,0 +1,42 @@
+Quartus Prime Archive log --	C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/__proyecto3.auto.qarlog
+
+Archive:	C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/__proyecto3.auto.qar
+Date:		Thu Nov 23 13:28:59 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/ALU.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/Banco_registros.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/RAM.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/RAM.txt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/ROM.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/ROM.txt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/db/proyecto3.cbx.xml
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/db/proyecto3.qpf
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/db/proyecto3.ram0_ROM_16bd8.hdl.mif
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/fase1.sv
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.asm.rpt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.done
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.fit.rpt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.fit.smsg
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.fit.summary
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.flow.rpt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.jdi
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.map.rpt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.map.summary
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.pin
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.sld
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.sof
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.sta.rpt
+C:/Users/jaume/OneDrive/Documentos/3_TELECO/ISDIGIT/microprocesador/proyecto3_restored/output_files/proyecto3.sta.summary
+__proyecto3.auto.qarlog
+arc_file_list_temp.tmp.txt
+assignment_defaults.qdf
+proyecto3.archive.rpt
+proyecto3.qsf
+proyecto3.restore.rpt
+proyecto3_clase1.qarlog
+	======= Total: 31 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,130 @@
+`timescale 1ns/100ps
+module tb_micro2 (); 
+
+	localparam T=20; 
+	
+	
+	// DUV instance 
+	logic clk, reset; 
+	
+	logic [31:0] w1, w2, w3, w4, w5; 
+	logic w6, w7;   
+
+
+fase1 duv(.CLK(clk), .RESET(reset), .INSTRUCCION_IF(w2), 
+.READ_DATA_MEM(w5), .READ_DATA_2_MEM(w3), 
+.ALU_RESULT_MEM(w4), .PC_IF(w1), .MEMWRITE_MEM(w6), .MEM_READ(w7)); 
+
+RAM ram(.clk(clk), .write_data(w3), .address(w4[11:2]), 
+.read_data(w5), .MemWrite(w6), .MemRead(w7));
+
+class RCSG_RISCV;
+	rand logic [31:0]IN; //w2 es la instruccion
+	constraint R_format    {IN[6:0] == 7'b0110011;} // obliga a que la instruccion sea R-format
+	constraint R_format_a  {(IN[6:0] == 7'b0110011 && IN[14:12]!=3'b000 && IN[14:12]!=3'b101) -> IN[31:25]==7'b0000000 ;}
+	constraint R_format_b  {(IN[6:0] == 7'b0110011 && (IN[14:12]==3'b000) || IN[14:12]==3'b101) -> IN[31:25]==7'b0000000 || IN[31:25]==7'b0100000 ;}
+endclass
+
+covergroup instrucciones @(posedge clk);
+ 
+  rformat : coverpoint ({w2[30],w2[14:12]})  iff (w2[6:0]==7'b0110011 && w2[31]==1'b0 && w2[29:25]==5'b0000)
+  {
+      bins add ={0};
+      bins sub={8};      
+      bins sll={1};
+      bins slt={2};
+      bins sltu={3};
+      bins ixor={4};
+      bins slr={5};
+      bins sra={13};
+      bins ior={6};
+      bins iand={7};
+      illegal_bins imposibles_rformat={9,10,11,12,14,15}; 
+  } 
+endgroup
+
+sequence add_mal;
+  logic [31:0]  src1,src2;
+  logic [4:0]   add_destino;
+  ({w2[30],w2[14:12]}==4'b0000, src1=w2[19:15], src2=w2[24:20],add_destino=w2[11:7]) ##1 (add_destino!=src1+src2, $display("en registro %d obtenido=%h esperado=%h",w2[11:7],add_destino,src1+src2));
+endsequence
+
+sequence add_bien;
+  logic [31:0]  src1,src2;
+  logic [4:0]   add_destino;
+  ({w2[30],w2[14:12]}==4'b0000, src1=w2[19:15], src2=w2[24:20],add_destino=w2[11:7]) ##1 (add_destino==src1+src2);
+endsequence
+idea1: assert property (@(posedge clk) disable iff (reset=1'b0) w2[6:0]==7'b0110011 && w2[31]==1'b0 && w2[29:25]==5'b0000|->add_bien )
+else $error("R format add");
+idea2: cover property (@(posedge clk) disable iff (reset=1'b0) w2[6:0]==7'b0110011 && w2[31]==1'b0 && w2[29:25]==5'b0000|->add_mal );
+
+RCSG_RISCV generar_instrucciones;
+instrucciones instr;
+	always
+	begin 
+		#(T/2)  clk = ~clk; 
+	end
+	
+
+
+initial 
+begin
+
+
+
+
+	instr=new;
+	generar_instrucciones=new;
+	clk=1'b0;
+	reset=1'b0;
+	
+	repeat(5) @(negedge clk);
+	
+	RST();
+	desactivo();
+	repeat(40) prueba_random_Rformat();
+	
+	$display("Fin de simulación!!");
+	$stop;
+end
+	
+	
+task desactivo;
+fork
+generar_instrucciones.R_format.constraint_mode(0);
+generar_instrucciones.R_format_a.constraint_mode(0);
+generar_instrucciones.R_format_b.constraint_mode(0);
+join
+endtask 
+
+task RST;
+begin
+
+//Reset de 4 ciclos asíncrono
+        reset=1'b0;
+        repeat(4) @(negedge clk);
+//Desactivamos el reset
+        reset=1'b1;
+
+
+end
+endtask 
+
+task prueba_random_Rformat;
+	begin 
+	reset=1'b0; 
+	generar_instrucciones.R_format.constraint_mode(1);
+	generar_instrucciones.R_format_a.constraint_mode(1);
+	generar_instrucciones.R_format_b.constraint_mode(1);
+	$display("tarea random Rformat");
+	assert (generar_instrucciones.randomize()) else    $fatal("randomization failed");
+	w2<=generar_instrucciones.IN;
+	#20;
+	
+	
+	end
+endtask
+
+
+
+endmodule
